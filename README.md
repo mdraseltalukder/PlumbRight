@@ -1,8 +1,23 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**
 
-Currently, two official plugins are available:
+## project name: Plumbing Website.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**
+**about info:**
+this website is about a Plumbing (WorkNest) website. <br>
+[visit-website](https://plumb-right.vercel.app/)
+ <br>
+**tools i have used:**  <br>
+
+ -React js <br>
+  -React type animation <br>
+  -GSAP <br>
+  -tailwind css <br>
+  -AOS animation <br>
+
+snap: 
+
+![enter image description here](https://github.com/mdraseltalukder/PlumbRight/blob/main/public/images/screens.png?raw=true)
+
+
