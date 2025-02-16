@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
         {/* Center Image */}
         <div className="center-image">
           <img
-            src="images/img_1.png"
+            src="images/Img1.png"
             alt="Professional Plumber"
             width={200}
             height={200}
