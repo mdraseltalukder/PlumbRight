@@ -4,8 +4,10 @@ import { Link } from "react-router-dom"
 export default function ServiceBanner() {
   return (
     <div className=" bg-[#bd77ec] text-white py-6">
-      <div className=" mx-auto px-4 max-w-[1100px] mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center py-4 gap-4 md:gap-8">
+      <div className=" mx-auto px-4 max-w-[1100px] ">
+        <div className="flex flex-col md:flex-row justify-between items-center py-4 gap-4 md:gap-8"  data-aos="fade-up"
+        data-aos-offset="50"
+        data-aos-easing="ease-in-sine">
           {/* Service Area Section */}
           <div className=" flex items-center gap-3">
             <MapPin className="h-8 w-8 flex-shrink-0" />

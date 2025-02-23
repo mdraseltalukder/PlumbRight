@@ -1,7 +1,5 @@
-import { useState } from "react"
-import { NavLink } from "react-router-dom"
-
-
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Links = [
   {
@@ -24,20 +22,25 @@ const Links = [
     name: "Blog",
     href: "/404",
   },
-  
+
   {
     name: "Contact Us",
     href: "/contact",
-  }
-] 
+  },
+];
 
 export default function NavbarBasic() {
-  const [isToggleOpen, setIsToggleOpen] = useState(false)
+  const [isToggleOpen, setIsToggleOpen] = useState(false);
 
   return (
     <>
       {/*<!-- Component: Basic Navbar --> */}
-      <header className="container relative z-20 w-full border-b border-slate-200 bg-white/90 shadow-lg shadow-slate-700/5 after:absolute after:left-0 after:top-full after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden">
+      <header
+        className="  z-20 w-full border-b border-slate-200 bg-white/90 shadow-lg shadow-slate-700/5 after:absolute after:left-0 after:top-full after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden"
+        data-aos="fade-down"
+        data-aos-offset="50"
+        data-aos-easing="ease-in-sine"
+      >
         <div className="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
           <nav
             aria-label="main navigation"
@@ -52,9 +55,7 @@ export default function NavbarBasic() {
               className="text-[#9900ff] whitespace-nowrap py-3 flex justify-start text-2xl xl:text-3xl xl:text-4xl font-thin focus:outline-none lg:flex-1"
               href="/"
             >
-              
-              
-              PlumbRight 
+              PlumbRight
             </NavLink>
             {/*      <!-- Mobile trigger --> */}
             <button
@@ -94,31 +95,27 @@ export default function NavbarBasic() {
                   : "invisible opacity-0"
               }`}
             >
-              <li role="none" className="flex flex-col lg:flex-row items-stretch">
-                
-        
-                {
-                  Links.map((link) => (
-                    <NavLink
-                  role="menuitem"
-                  aria-haspopup="false"
-                  className="flex items-center  py-4  transition-colors duration-300 focus:outline-none focus-visible:outline-none lg:px-4"
-                  to={link.href}
-                 key="Links.name">
-                  <span>{link.name}</span>
-
-                    </NavLink>
-                  ))
-                }
-            
-              
+              <li
+                role="none"
+                className="flex flex-col lg:flex-row items-stretch"
+              >
+                {Links.map((link) => (
+                  <NavLink
+                    role="menuitem"
+                    aria-haspopup="false"
+                    className="flex items-center  py-4  transition-colors duration-300 focus:outline-none focus-visible:outline-none lg:px-4"
+                    to={link.href}
+                    key="Links.name"
+                  >
+                    <span>{link.name}</span>
+                  </NavLink>
+                ))}
               </li>
-             
             </ul>
           </nav>
         </div>
       </header>
       {/*<!-- End Basic Navbar--> */}
     </>
-  )
+  );
 }

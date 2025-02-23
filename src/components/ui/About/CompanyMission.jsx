@@ -3,7 +3,9 @@ export default function CompanyMission() {
       <section className="grid md:grid-cols-2 my-10">
         {/* Left Section */}
         <div className="bg-gray-100 px-8 py-12 md:px-12 lg:px-16">
-          <div className="max-w-xl">
+          <div className="max-w-xl" data-aos="fade-up"
+        data-aos-offset="50"
+        data-aos-easing="ease-in-sine">
             <h3 className=" font-bold text-gray-900 mb-6">
               Company Mission <span className="inline-block w-8 h-1 bg-[#9900ff] ml-2" />
             </h3>

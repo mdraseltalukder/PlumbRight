@@ -1,29 +1,55 @@
-import { Facebook, Twitter, Linkedin, Globe, Instagram } from "lucide-react"
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="footer mt-1">
-      <div className="footer-content">
+      <div
+        className="footer-content"
+        data-aos="fade-up"
+        data-aos-offset="50"
+        data-aos-easing="ease-in-sine"
+      >
         {/* Main Footer Content */}
         <div className="footer-sections">
           {/* About Us Section */}
           <div className="footer-section">
             <h3 className="footer-heading">ABOUT US</h3>
             <p className="about-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna ali qua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna ali qua. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div className="social-icons">
-              <a href="https://x.com/mdraseltalukdr"  target="_blank" className="social-icon" aria-label="Twitter">
+              <a
+                href="https://x.com/mdraseltalukdr"
+                target="_blank"
+                className="social-icon"
+                aria-label="Twitter"
+              >
                 <Twitter size={18} />
               </a>
-              <a href="https://www.facebook.com/mdraseltalukder0/" target="_blank" className="social-icon" aria-label="Facebook">
+              <a
+                href="https://www.facebook.com/mdraseltalukder0/"
+                target="_blank"
+                className="social-icon"
+                aria-label="Facebook"
+              >
                 <Facebook size={18} />
               </a>
-              <a href="https://www.linkedin.com/in/md-rasel-talukderbd/" target="_blank" className="social-icon" aria-label="LinkedIn">
+              <a
+                href="https://www.linkedin.com/in/md-rasel-talukderbd/"
+                target="_blank"
+                className="social-icon"
+                aria-label="LinkedIn"
+              >
                 <Linkedin size={18} />
               </a>
-              <a href="https://www.instagram.com/mdraseltalukdrr/" target="_blank" className="social-icon" aria-label="Website">
+              <a
+                href="https://www.instagram.com/mdraseltalukdrr/"
+                target="_blank"
+                className="social-icon"
+                aria-label="Website"
+              >
                 <Instagram size={18} />
               </a>
             </div>
@@ -88,19 +114,21 @@ const Footer = () => {
         {/* Newsletter Section */}
         <div className="newsletter-section">
           <p className="newsletter-text">
-            Subscribe now and receive weekly newsletter with new tips and exciting offers or discounts.
+            Subscribe now and receive weekly newsletter with new tips and
+            exciting offers or discounts.
           </p>
         </div>
 
         {/* Footer Bottom */}
         <div className="footer-bottom">
-          <p className="copyright">Copyright © Plumbing Spl 2023. All rights reserved.</p>
+          <p className="copyright">
+            Copyright © Plumbing Spl 2023. All rights reserved.
+          </p>
           <p className="credits">Developed by: Md Rasel</p>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
-
+export default Footer;

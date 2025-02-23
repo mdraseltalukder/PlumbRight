@@ -70,7 +70,9 @@ export default function ServicesCarousel() {
 
   return (
     <section className="py-16 px-4">
-      <div className="container mx-auto">
+      <div className="container mx-auto"  data-aos="fade-up"
+        data-aos-offset="50"
+        data-aos-easing="ease-in-sine">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold  mb-4">
             Plumbing, Heating, Air Conditioning, and Insulation

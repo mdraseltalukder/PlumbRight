@@ -1,5 +1,4 @@
-"use client"
-
+"use client";
 
 export default function Hero() {
   return (
@@ -16,26 +15,25 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative container h-full flex items-center">
+      <div
+        className="relative container h-full flex items-center"
+        data-aos="fade-up"
+        data-aos-offset="50"
+        data-aos-easing="ease-in-sine"
+      >
         <div className="container  px-4 md:px-6">
           <div className="max-w-2xl flex flex-col justify-start items-start space-y-4">
-       
-              <p className="text-navy-900 font-light   ">BEST PLUMBING COMPANY_____</p>
+            <p className="text-navy-900 font-light   ">
+              BEST PLUMBING COMPANY_____
+            </p>
 
-    
-              <h1 className="text-navy-900 font-bold  leading-none">
-                EMERGENCY
+            <h1 className="text-navy-900 font-bold  leading-none">EMERGENCY</h1>
+            <h1 className="text-navy-900 font-bold  leading-none">PLUMBING</h1>
 
-           
-              </h1>
-              <h1 className="text-navy-900 font-bold  leading-none">
-                PLUMBING
-
-              </h1>
-
-              <span className="  text-navy-800  max-w-xl">
-                We&apos;re open 24/7/365 because plumbing emergencies don&apos;t wait...
-              </span>
+            <span className="  text-navy-800  max-w-xl">
+              We&apos;re open 24/7/365 because plumbing emergencies don&apos;t
+              wait...
+            </span>
           </div>
         </div>
       </div>
@@ -47,7 +45,7 @@ export default function Hero() {
           <span className="sr-only">Previous slide</span>
         </Button>
       </div> */}
-{/* 
+      {/* 
       <div className="absolute inset-y-0 right-0 flex items-center">
         <Button variant="ghost" size="icon" className="h-12 w-12 rounded-full bg-white/80 hover:bg-white">
           <ChevronRight className="h-6 w-6" />
@@ -55,6 +53,5 @@ export default function Hero() {
         </Button>
       </div> */}
     </div>
-  )
+  );
 }
-

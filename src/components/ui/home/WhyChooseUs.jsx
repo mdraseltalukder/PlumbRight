@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { Home, Tag, ThumbsUp, Truck, User, Wrench } from "lucide-react"
-import { useState } from "react"
+import { Home, Tag, ThumbsUp, Truck, User, Wrench } from "lucide-react";
+import { useState } from "react";
 
 const WhyChooseUs = () => {
-  const [activeFeature, setActiveFeature] = useState(null)
+  const [activeFeature, setActiveFeature] = useState(null);
 
   const features = [
     {
@@ -43,10 +43,15 @@ const WhyChooseUs = () => {
       title: "Respect Your Home",
       angle: 300,
     },
-  ]
+  ];
 
   return (
-    <div className="why-choose-container">
+    <div
+      className="why-choose-container"
+      data-aos="fade-up"
+      data-aos-offset="50"
+      data-aos-easing="ease-in-sine"
+    >
       <h2 className="">
         Why Choose Us
         <span className="title-underline"></span>
@@ -64,13 +69,13 @@ const WhyChooseUs = () => {
           />
         </div>
 
-    
-
         {/* Feature Icons */}
         {features.map((feature) => (
           <div
             key={feature.id}
-            className={`feature-item ${activeFeature === feature.id ? "active" : ""}`}
+            className={`feature-item ${
+              activeFeature === feature.id ? "active" : ""
+            }`}
             style={{
               transform: `rotate(${feature.angle}deg) translateX(270px) rotate(-${feature.angle}deg)`,
             }}
@@ -83,8 +88,7 @@ const WhyChooseUs = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default WhyChooseUs
-
+export default WhyChooseUs;

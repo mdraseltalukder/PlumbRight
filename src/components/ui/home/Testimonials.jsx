@@ -1,52 +1,63 @@
+"use client";
 
-'use client'
+import { Quote } from "lucide-react";
 
-import { Quote } from 'lucide-react'
-
-import Autoplay from 'embla-carousel-autoplay'
-import useEmblaCarousel from 'embla-carousel-react'
-import { useEffect } from 'react'
-import { Card, CardContent } from '../card'
+import Autoplay from "embla-carousel-autoplay";
+import useEmblaCarousel from "embla-carousel-react";
+import { useEffect } from "react";
+import { Card, CardContent } from "../card";
 
 export default function TestimonialsSlider() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' }, [Autoplay()])
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    { loop: true, align: "start" },
+    [Autoplay()]
+  );
 
   const testimonials = [
     {
-      quote: "Totam rem aperiam, eaque ipsa quae ab illo invent ore veritatis et quasi architecto beatae vitae dict eaque ipsa quae ab.Teritatis et quasi architecto. Sed ut perspi ciatis unde omnis iste natus error sit volu ptatem accusantium dolore mque.",
+      quote:
+        "Totam rem aperiam, eaque ipsa quae ab illo invent ore veritatis et quasi architecto beatae vitae dict eaque ipsa quae ab.Teritatis et quasi architecto. Sed ut perspi ciatis unde omnis iste natus error sit volu ptatem accusantium dolore mque.",
       author: "Philipin John",
       location: "UNITEDSTATE",
-      image: "images/testimonial-1.jpg"
+      image: "images/testimonial-1.jpg",
     },
     {
-      quote: "Totam rem aperiam, eaque ipsa quae ab illo invent ore veritatis et quasi architecto beatae vitae dict eaque ipsa quae ab.Teritatis et quasi architecto. Sed ut perspi ciatis unde omnis iste natus error sit volu ptatem accusantium dolore mque.",
+      quote:
+        "Totam rem aperiam, eaque ipsa quae ab illo invent ore veritatis et quasi architecto beatae vitae dict eaque ipsa quae ab.Teritatis et quasi architecto. Sed ut perspi ciatis unde omnis iste natus error sit volu ptatem accusantium dolore mque.",
       author: "Mariya John",
       location: "MOUNTHILL",
-      image: "images/testimonial-2.jpg"
+      image: "images/testimonial-2.jpg",
     },
     {
-      quote: "Totam rem aperiam, eaque ipsa quae ab illo invent ore veritatis et quasi architecto beatae vitae dict eaque ipsa quae ab.Teritatis et quasi architecto. Sed ut perspi ciatis unde omnis iste natus error sit volu ptatem accusantium dolore mque.",
+      quote:
+        "Totam rem aperiam, eaque ipsa quae ab illo invent ore veritatis et quasi architecto beatae vitae dict eaque ipsa quae ab.Teritatis et quasi architecto. Sed ut perspi ciatis unde omnis iste natus error sit volu ptatem accusantium dolore mque.",
       author: "Philipin John",
       location: "UNITEDSTATE",
-      image: "images/testimonial-1.jpg"
+      image: "images/testimonial-1.jpg",
     },
     {
-      quote: "Totam rem aperiam, eaque ipsa quae ab illo invent ore veritatis et quasi architecto beatae vitae dict eaque ipsa quae ab.Teritatis et quasi architecto. Sed ut perspi ciatis unde omnis iste natus error sit volu ptatem accusantium dolore mque.",
+      quote:
+        "Totam rem aperiam, eaque ipsa quae ab illo invent ore veritatis et quasi architecto beatae vitae dict eaque ipsa quae ab.Teritatis et quasi architecto. Sed ut perspi ciatis unde omnis iste natus error sit volu ptatem accusantium dolore mque.",
       author: "Mariya John",
       location: "MOUNTHILL",
-      image: "images/testimonial-2.jpg"
-    }
-  ]
+      image: "images/testimonial-2.jpg",
+    },
+  ];
 
   useEffect(() => {
     if (emblaApi) {
-      emblaApi.reInit()
+      emblaApi.reInit();
     }
-  }, [emblaApi])
+  }, [emblaApi]);
 
   return (
     <div className="bg-gray-50 py-16 px-4 md:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div
+        className="max-w-7xl mx-auto"
+        data-aos="fade-up"
+        data-aos-offset="50"
+        data-aos-easing="ease-in-sine"
+      >
         <h2 className="text-3xl font-bold text-center mb-12">
           What Our Client Says
         </h2>
@@ -54,8 +65,8 @@ export default function TestimonialsSlider() {
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
             {testimonials.map((testimonial, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="flex-[0_0_100%] min-w-0 pl-4 md:flex-[0_0_50%]"
               >
                 <Card className="border-none shadow-lg mr-4">
@@ -93,5 +104,5 @@ export default function TestimonialsSlider() {
         </div>
       </div>
     </div>
-  )
+  );
 }
